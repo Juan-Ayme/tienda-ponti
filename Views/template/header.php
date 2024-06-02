@@ -24,6 +24,10 @@
     <link href="<?php echo BASE_URL . 'public/admin/DataTables/datatables.min.css'; ?>" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style.css" type="text/css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/login.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style-header.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style-login.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style-ind.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style-productos.css" type="text/css">
 </head>
 
 <body>
@@ -70,7 +74,7 @@
         </div>
         <div class="humberger__menu__contact">
             <ul>
-                <li><i class="fa fa-envelope"></i> <?php echo $data['negocio']['correo']; ?></li>
+                <li><i class="fa fa-envelope"></i> TiendaPontificia@elp.edu.pe</li>
                 <li>Tienda online</li>
             </ul>
         </div>
@@ -85,7 +89,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="header__top__left">
                             <ul>
-                                <li><i class="fa fa-envelope"></i> <?php echo $data['negocio']['correo']; ?></li>
+                                <li><i class="fa fa-envelope"></i> TiendaPontificia@elp.edu.pe</li>
                                 <li>Tienda online</li>
                             </ul>
                         </div>
@@ -93,16 +97,15 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="header__top__right">
                             <div class="header__top__right__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/ILPInstitutoLaPontificia"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
                                 <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
                             </div>
                             <div class="header__top__right__auth">
                                 <?php if (empty($_SESSION['id_usuario'])) { ?>
                                     <a href="<?php echo BASE_URL . 'principal/login'; ?>"><i class="fa fa-user"></i> Login</a>
                                 <?php } else {  ?>
-                                    <a href="<?php echo BASE_URL . 'profile'; ?>"><i class="fa fa-user"></i> Tu cuenta</a>
+                                    <a class="cuenta-usuario modern-a" href="<?php echo BASE_URL . 'profile'; ?>"><i class="fa fa-user "></i> Tu cuenta</a>
                                 <?php } ?>
                             </div>
                         </div>
@@ -114,15 +117,15 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="<?php echo BASE_URL; ?>"><img src="<?php echo BASE_URL; ?>public/img/logo.png" alt="LOGO" width="50"></a>
+                        <a href="<?php echo BASE_URL; ?>"><img src="<?php echo BASE_URL; ?>public/img/logo-pontificia-sin.png" alt="LOGO" width="200"></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <nav class="header__menu">
+                    <nav class="header__menu " >
                         <ul>
-                            <li class="active"><a href="<?php echo BASE_URL; ?>">Inicio</a></li>
-                            <li><a href="<?php echo BASE_URL . 'principal/productos'; ?>">Productos</a></li>
-                            <li><a href="<?php echo BASE_URL . 'principal/contactos'; ?>">Contactos</a></li>
+                            <li ><a class="modern-a" href="<?php echo BASE_URL; ?>">Inicio</a></li>
+                            <li ><a class="modern-a" href="<?php echo BASE_URL . 'principal/productos'; ?>">Uniformes</a></li>
+                            <li><a class="modern-a" href="<?php echo BASE_URL . 'principal/contactos'; ?>">Contactos</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -130,7 +133,7 @@
                     <div class="header__cart">
                         <ul>
                             <!-- <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li> -->
-                            <li><a href="<?php echo BASE_URL . 'principal/carrito'; ?>"><i class="fa fa-shopping-bag"></i> <span id="numerito1">0</span></a></li>
+                            <li><a href="<?php echo BASE_URL . 'principal/carrito'; ?>"><i class="fa fa-shopping-bag"></i> <span id="numerito1" class="carrito-compra">0</span></a></li>
                         </ul>
                         <!-- <div class="header__cart__price">item: <span>$150.00</span></div> -->
                     </div>
@@ -147,8 +150,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="hero__categories">
-                        <div class="hero__categories__all">
+                    <div class="hero__categories modern-container">
+                        <div class="hero__categories__all modern-categoria">
                             <i class="fa fa-bars"></i>
                             <span>Todas las categorias</span>
                         </div>
@@ -159,7 +162,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-9 ">
                     <div class="hero__search">
                         <div class="hero__search__form">
                             <form action="<?php echo BASE_URL . 'principal/productos'; ?>" autocomplete="off">
@@ -177,16 +180,15 @@
                             </div>
                         </div>
                     </div>
-                    <?php if ($data['title'] == 'Pagina Principal') { ?>
-                        <div class="hero__item set-bg" data-setbg="<?php echo BASE_URL; ?>public/img/hero/banner.jpg">
+                        <?php if ($data['title'] == 'Pagina Principal') { ?>
+                        <div class="hero__ite set-bg " data-setbg="<?php echo BASE_URL; ?>public/img/hero/tecno-carrera_en-2017_08_17_111821.jpg">
                             <div class="hero__text">
-                                <span>FRUTA FRESCA</span>
-                                <h2>Vegetable <br />100% Organicos</h2>
-                                <p>Recogida y entrega gratuitas disponibles</p>
-                                <a href="<?php echo BASE_URL . 'principal/productos'; ?>" class="primary-btn">Ver productos</a>
-                            </div>
-                        </div>
+                                <p class="text-title"> <b>UNIFORMES DE CALIDAD </b> </p>
+                                <h2>Uniformes de Enfermería <br />100% Profesionales</h2>
+                                <p>Envío y devolución gratuitos disponibles</p>
+                                <a href="<?php echo BASE_URL . 'principal/productos'; ?>" class="modern-button">Ver uniformes</a> </div>
                     <?php } ?>
+                    </div>
                 </div>
             </div>
         </div>

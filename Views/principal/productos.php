@@ -1,15 +1,15 @@
 <?php include "Views/template/header.php"; ?>
 
 <!-- Breadcrumb Section Begin -->
-<section class="breadcrumb-section set-bg" data-setbg="<?php echo BASE_URL; ?>public/img/breadcrumb.jpg">
+<section class="breadcrumb-section set-bg" data-setbg="<?php echo BASE_URL; ?>public/img/hero/1519810207175-Pontificia.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <div class="breadcrumb__text">
-                    <h2>Nuestros Productos</h2>
+                    <h2>Nuestros Uniformes</h2>
                     <div class="breadcrumb__option">
                         <a href="<?php echo BASE_URL; ?>">Inicio</a>
-                        <span>Productos</span>
+                        <span>Uniforme</span>
                     </div>
                 </div>
             </div>
@@ -58,13 +58,13 @@
             <div class="col-lg-9 col-md-7">
                 <div class="row" id="content-productos">
                     <?php foreach ($data['productos'] as $producto) { ?>
-                        <div class="col-lg-3 col-md-4 col-sm-6 mix cat_<?php echo $producto['id_categoria']; ?> fresh-meat">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-lg-33 col-md-44 col-sm-66 mix  hero__ite2 cat_<?php echo $producto['id_categoria']; ?> fresh-meat">
                             <div class="featured__item">
                                 <div class="featured__item__pic set-bg" data-setbg="<?php echo BASE_URL . 'public/img/productos/' . $producto['imagen']; ?>">
                                     <ul class="featured__item__pic__hover">
                                         <li><a href="https://api.whatsapp.com/send?phone=<?php echo $data['negocio']['whatsapp'] . '&text=Productos= ' . $producto['nombre'] . ' Precio(' . $producto['precio'] . ')' ; ?>"  target="_blank"><i class="fa fa-whatsapp"></i></a></li>
                                         <!-- <li><a href="#"><i class="fa fa-retweet"></i></a></li> -->
-                                        <li><a href="#" stock="<?php echo $producto['cantidad']; ?>" class="producto-agregar" id="<?php echo $producto['id']; ?>"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="#" stock="<?php echo $producto['cantidad']; ?>" class="producto-agregar carrito-color" id="<?php echo $producto['id']; ?>"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="featured__item__text">
@@ -134,13 +134,13 @@
                 const res = JSON.parse(this.responseText);
                 html = '';
                 res.productos.forEach(producto => {
-                    html += `<div class="col-lg-3 col-md-4 col-sm-6 mix cat_${producto.id_categoria} fresh-meat">
+                    html += `<div class="col-lg-3 col-md-4 col-sm-6 col-lg-33 col-md-44 col-sm-66 hero__ite2 mix cat_${producto.id_categoria} fresh-meat">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="${ ruta + 'public/img/productos/' + producto.imagen }">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="https://api.whatsapp.com/send?phone=${ res.negocio.whatsapp + '&text=Productos= ' + producto.nombre +  ' Precio(' + producto.precio + ')' }" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
                                 <!-- <li><a href="#"><i class="fa fa-retweet"></i></a></li> -->
-                                <li><a href="#" stock="${producto.cantidad}" class="producto-agregar" id="${producto.id}"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#" stock="${producto.cantidad}" class="producto-agregar carrito-color" id="${producto.id}"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
                         <div class="featured__item__text">

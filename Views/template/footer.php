@@ -5,12 +5,12 @@
       <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="footer__about">
           <div class="footer__about__logo">
-            <a href="<?php echo BASE_URL; ?>"><img src="<?php echo BASE_URL; ?>public/img/logo.png" alt="" width="50"></a>
+            <a href="<?php echo BASE_URL; ?>"><img src="<?php echo BASE_URL; ?>public/img/logo-pontificia-sin.png" alt="" width="200"></a>
           </div>
           <ul>
-            <li>Address: <?php echo $data['negocio']['direccion']; ?></li>
-            <li>Phone: <?php echo $data['negocio']['telefono']; ?></li>
-            <li>Email: <?php echo $data['negocio']['correo']; ?></li>
+            <li>Direccion: <?php echo $data['negocio']['direccion']; ?></li>
+            <li>Celular: <?php echo $data['negocio']['telefono']; ?></li>
+            <li>Correo: TiendaPontificia@elp.edu.pe</li>
           </ul>
         </div>
       </div>
@@ -29,14 +29,14 @@
           <h6>Únase a nuestro boletín ahora</h6>
           <p>Reciba actualizaciones por correo electrónico sobre nuestra última tienda y ofertas especiales.</p>
           <form action="#">
-            <input type="text" placeholder="Introduce tu correo">
-            <button type="submit" class="site-btn">Suscribir</button>
+            <input type="text" placeholder="Introduce tu correo" >
+            <button type="submit" class="modern-button">Suscribir</button>
           </form>
+
           <div class="footer__widget__social">
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-instagram"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-pinterest"></i></a>
           </div>
         </div>
       </div>
@@ -46,12 +46,12 @@
         <div class="footer__copyright">
           <div class="footer__copyright__text">
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy;<script>
+            Pontificia &copy;<script>
                 document.write(new Date().getFullYear());
-              </script> All rights reserved </a>
+              </script> Todos los derechos reservados </a>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
-          <div class="footer__copyright__payment"><img src="<?php echo BASE_URL; ?>public/img/payment-item.png" alt=""></div>
+          <div class="footer__copyright__payment"><img src="<?php echo BASE_URL; ?>public/img/payment-item.png" alt="Icono"></div>
         </div>
       </div>
     </div>

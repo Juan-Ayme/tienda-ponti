@@ -1,30 +1,11 @@
 <?php include "Views/template/header.php"; ?>
-
-<!-- Categories Section Begin -->
-<section class="categories">
-    <div class="container">
-        <div class="row">
-            <div class="categories__slider owl-carousel">
-                <?php foreach ($data['categorias'] as $categoria) { ?>
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="<?php echo BASE_URL . 'public/img/categorias/' . $categoria['imagen']; ?>">
-                            <h5><a href="#"><?php echo $categoria['categoria']; ?></a></h5>
-                        </div>
-                    </div>
-                <?php } ?>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Categories Section End -->
-
 <!-- Featured Section Begin -->
 <section class="featured spad">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title">
-                    <h2>Nuevos productos</h2>
+                    <h2>Nuevos Uniformes</h2>
                 </div>
                 <div class="featured__controls">
                     <ul>
@@ -38,13 +19,13 @@
         </div>
         <div class="row featured__filter">
             <?php foreach ($data['destacados'] as $producto) { ?>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix cat_<?php echo $producto['id_categoria']; ?> fresh-meat">
+                <div class="col-lg-3 col-md-4 col-md-44 col-sm-6 col-sm-66 col-lg-33 mix cat_<?php echo $producto['id_categoria']; ?> fresh-meat hero__ite2">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="<?php echo BASE_URL . 'public/img/productos/' . $producto['imagen']; ?>">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="https://api.whatsapp.com/send?phone=<?php echo $data['negocio']['whatsapp'] . '&text=Productos= ' . $producto['nombre'] . ' Precio(' . $producto['precio'] . ')'; ?>" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
                                 <!-- <li><a href="#"><i class="fa fa-retweet"></i></a></li> -->
-                                <li><a href="#" stock="<?php echo $producto['cantidad']; ?>" class="producto-agregar" id="<?php echo $producto['id']; ?>"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li cl><a href="#" stock="<?php echo $producto['cantidad']; ?>" class="producto-agregar carrito-color" id="<?php echo $producto['id']; ?>"><i class="fa fa-shopping-cart "></i></a></li>
                             </ul>
                         </div>
                         <div class="featured__item__text">
@@ -59,32 +40,13 @@
 </section>
 <!-- Featured Section End -->
 
-<!-- Banner Begin -->
-<div class="banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <div class="banner__pic">
-                    <img src="<?php echo BASE_URL; ?>public/img/banner/banner-1.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <div class="banner__pic">
-                    <img src="<?php echo BASE_URL; ?>public/img/banner/banner-2.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Banner End -->
-
-<!-- Latest Product Section Begin -->
+<!-- Latest Product Section Begin 
 <section class="latest-product spad">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="latest-product__text">
-                    <h4>Últimos productos</h4>
+                    <h4>Últimos uniformes</h4>
                     <div class="latest-product__slider owl-carousel">
                         <?php
                         $productos = $data['destacados']; // Aquí deberías tener tus productos desde la consulta SQL
@@ -117,7 +79,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="latest-product__text">
-                    <h4>Productos agotados</h4>
+                    <h4>Uniformes agotados</h4>
                     <div class="latest-product__slider owl-carousel">
                         <?php
                         $productos = $data['agotados']; // Aquí deberías tener tus productos desde la consulta SQL
@@ -150,7 +112,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="latest-product__text">
-                    <h4>Top productos</h4>
+                    <h4>Top Uniformes</h4>
                     <div class="latest-product__slider owl-carousel">
                         <?php
                         $productos = $data['tops']; // Aquí deberías tener tus productos desde la consulta SQL
@@ -183,7 +145,7 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 <!-- Latest Product Section End -->
 
 <?php include "Views/template/footer.php"; ?>

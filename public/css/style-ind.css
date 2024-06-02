@@ -1,0 +1,40 @@
+.hero__ite2 {
+    border-radius: 10px; /* Cambia el radio del borde según tus necesidades */
+    background-color: #f9f9f9; /* Cambia el color de fondo según tus necesidades */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Añade una sombra para dar profundidad */
+    transition: 0.3s; /* Añade una transición para suavizar los cambios de estado */
+	padding: 0;
+    margin: 10px;
+}
+
+.col-lg-33:hover, .col-md-44:hover, .col-sm-66:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.featured__item__pic {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.carrito-color{
+    border-color: #2499c700!important;
+}
+.carrito-color:hover{
+    background-color: #2499c7!important;
+    border-color: #2499c700!important;
+}
+
+.carrito-compra{
+    background-color: #2499c7!important;
+    border-color: #2499c7!important;
+}
+
+.carrito-compra:hover{
+    background-color: #006691!important;
+    border-color: #006691!important;
+}
+.section-title h2:after {
+    background: #2499c7;
+}
+.featured__controls ul li:after {
+    background: #2499c7;
+}

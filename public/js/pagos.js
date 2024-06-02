@@ -88,7 +88,7 @@ function mostrarProductos() {
     .then((data) => {
       html = "";
       data.productos.forEach((producto) => {
-        html += `<tr class="table-primary">
+        html += `<tr class="">
         <td class="shoping__cart__item">
                 <img src="${ruta + "public/img/productos/" + producto.imagen
           }" alt="${producto.nombre}" width="50">
@@ -103,7 +103,7 @@ function mostrarProductos() {
                 </div>
             </td>
             <td class="shoping__cart__total">
-                $ ${producto.subTotal}
+                S/ ${producto.subTotal}
             </td>
 	  </tr>`;
         //agregrar producto para paypal
@@ -119,7 +119,7 @@ function mostrarProductos() {
         productosjson.push(json);
       });
       contenedorCarritoProductos.innerHTML = html;
-      contenedorTotal.textContent = "$" + data.total;
+      contenedorTotal.textContent = "S/" + data.total;
       document.getElementById("paypal-button-container").innerHTML = "";
       mostrarPaypal(data.totalPaypal);
     });

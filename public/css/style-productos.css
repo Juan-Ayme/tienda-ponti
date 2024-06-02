@@ -1,0 +1,76 @@
+
+/*Productos*/
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+}
+
+.form-check input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.form-check-label {
+    cursor: pointer;
+}
+/* Ocultar el checkbox original */
+.form-check input[type="checkbox"] {
+    display: none;
+}
+
+/* Crear un nuevo checkbox */
+.form-check label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 2px solid #2499c7;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* Estilo cuando el checkbox está marcado */
+.form-check input[type="checkbox"]:checked + label::before {
+    background-color: #2499c7;
+    border-color: #2499c7;
+}
+
+/* Estilo cuando el checkbox está marcado y el mouse está encima */
+.form-check input[type="checkbox"]:checked:hover + label::before {
+    background-color: #006691;
+    border-color: #006691;
+}
+.price-range-wrap .price-range .ui-slider-range.ui-corner-all.ui-widget-header:last-child {
+    background: #006691;
+}
+.price-range-wrap .range-slider .price-input input {
+    font-size: 16px;
+    color: #006691;
+    font-weight: 700;
+    max-width: 20%;
+    border: none;
+    display: inline-block;
+}
+
+.price-range-wrap .range-slider .price-input:after {
+    position: absolute;
+    left: 38px;
+    top: 13px;
+    height: 1px;
+    width: 5px;
+    background: #006691;
+    content: "";
+}

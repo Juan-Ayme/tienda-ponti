@@ -75,6 +75,7 @@
 <?php include "Views/template/footer.php"; ?>
 
 <script src="<?php echo BASE_URL; ?>public/js/carrito.js"></script>
+
 </body>
 
 </html>

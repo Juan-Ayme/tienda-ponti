@@ -1,7 +1,7 @@
 <?php include "Views/template/header.php"; ?>
 
 <!-- Breadcrumb Section Begin -->
-<section class="breadcrumb-section set-bg" data-setbg="<?php echo BASE_URL; ?>public/img/breadcrumb.jpg">
+<section class="breadcrumb-section set-bg" data-setbg="<?php echo BASE_URL; ?>public/img/hero/tecno-carrera_en-2017_08_17_111821.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -24,28 +24,29 @@
             <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                 <div class="contact__widget">
                     <span class="icon_phone"></span>
-                    <h4>Phone</h4>
+                    <h4>Teléfono</h4>
                     <p><?php echo $data['negocio']['telefono']; ?></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                 <div class="contact__widget">
                     <span class="icon_pin_alt"></span>
-                    <h4>Address</h4>
+                    <h4>Dirección</h4>
                     <p><?php echo $data['negocio']['direccion']; ?></p>
+                    <p>Av. Carmen Alto 390 - Alameda de La Independencia (Ex Alameda Valdelirios)</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                 <div class="contact__widget">
                     <span class="icon_clock_alt"></span>
-                    <h4>Open time</h4>
-                    <p>10:00 am to 23:00 pm</p>
+                    <h4>Horario de apertura</h4>
+                    <p>10:00 am a 23:00 pm</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                 <div class="contact__widget">
                     <span class="icon_mail_alt"></span>
-                    <h4>Email</h4>
+                    <h4>Correo</h4>
                     <p><?php echo $data['negocio']['correo']; ?></p>
                 </div>
             </div>
@@ -62,8 +63,8 @@
         <div class="inside-widget">
             <h4>Perú</h4>
             <ul>
-                <li>Phone: <?php echo $data['negocio']['telefono']; ?></li>
-                <li>Add: <?php echo $data['negocio']['direccion']; ?></li>
+                <li>Teléfono: <?php echo $data['negocio']['telefono']; ?></li>
+                <li>Dirección: <?php echo $data['negocio']['direccion']; ?></li>
             </ul>
         </div>
     </div>
@@ -76,21 +77,21 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="contact__form__title">
-                    <h2>Leave Message</h2>
+                    <h2>Dejar mensaje 😊</h2>
                 </div>
             </div>
         </div>
         <form action="#">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
-                    <input type="text" placeholder="Your name">
+                    <input type="text" placeholder="Tu nombre">
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <input type="text" placeholder="Your Email">
+                    <input type="text" placeholder="Tu Correo">
                 </div>
                 <div class="col-lg-12 text-center">
-                    <textarea placeholder="Your message"></textarea>
-                    <button type="submit" class="site-btn">SEND MESSAGE</button>
+                    <textarea placeholder="Tu Mensaje"></textarea>
+                    <button type="submit" class="site-btn">ENVIAR MENSAJE</button>
                 </div>
             </div>
         </form>

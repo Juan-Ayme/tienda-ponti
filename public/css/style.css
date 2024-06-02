@@ -587,7 +587,7 @@ ol {
 }
 
 .hero__categories__all {
-	background: #7fad39;
+    background-color: #2499c7; /* Cambia el color de fondo según tus necesidades */
 	position: relative;
 	padding: 10px 25px 10px 40px;
 	cursor: pointer;
@@ -731,6 +731,17 @@ ol {
 	display: flex;
 	align-items: center;
 	padding-left: 75px;
+}
+.plantilla{
+	height: 431px;
+    display: flex;
+    align-items: center;
+    padding-left: 75px;
+    border: 1px solid #000; /* Cambia el color del borde según tus necesidades */
+    border-radius: 10px; /* Cambia el radio del borde según tus necesidades */
+    background-color: #f9f9f9; /* Cambia el color de fondo según tus necesidades */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Añade una sombra para dar profundidad */
+    transition: 0.3s;
 }
 
 .hero__text span {
