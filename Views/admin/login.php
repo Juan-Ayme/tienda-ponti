@@ -43,9 +43,9 @@
                     <div class="card mb-0">
                         <div class="card-body">
                             <div class="p-2">
-                                <h4 class="text-muted float-right font-18 mt-4">Sign In</h4>
+                                <h4 class="text-muted float-right font-18 mt-4">Inicia sesión</h4>
                                 <div>
-                                    <a href="<?php echo BASE_URL; ?>" class="logo logo-admin"><img src="<?php echo BASE_URL; ?>public/img/logo.png" height="50" alt="logo"></a>
+                                    <a href="<?php echo BASE_URL; ?>" class="logo logo-admin"><img src="<?php echo BASE_URL; ?>public/img/logo-pontificia-sin.png" height="50" alt="logo"></a>
                                 </div>
                             </div>
 
@@ -67,13 +67,13 @@
 
                                     <div class="form-group text-center row m-t-20">
                                         <div class="col-12">
-                                            <button class="btn btn-primary btn-block waves-effect waves-light" type="submit">Log In</button>
+                                            <button class="btn btn-primary btn-block waves-effect waves-light" type="submit">Inicia sesión</button>
                                         </div>
                                     </div>
 
                                     <div class="form-group m-t-10 mb-0 row">
                                         <div class="col-sm-7 m-t-20">
-                                            <a href="<?php echo BASE_URL . 'principal/recoverpw'; ?>" class="text-muted"><i class="mdi mdi-lock"></i> Forgot your password?</a>
+                                            <a href="<?php echo BASE_URL . 'principal/recoverpw'; ?>" class="text-muted"><i class="mdi mdi-lock"></i> Olvidaste tu contraseña?</a>
                                         </div>
                                     </div>
 

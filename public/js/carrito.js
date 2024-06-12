@@ -54,13 +54,13 @@ function mostrarProductos() {
           }) `;
           productosTotal = `${data.total}`;
           html += `<tr>
-            <td class="shoping__cart__item">
+            <td class="shoping__cart__item ">
                 <img src="${
                   ruta + "public/img/productos/" + producto.imagen
                 }" alt="${producto.nombre}" width="50">
                 <h5>${producto.nombre}</h5>
             </td>
-            <td class="shoping__cart__price">
+            <td class="shoping__cart__price ">
                 S/ ${producto.precio}
             </td>
             <td class="shoping__cart__quantity">

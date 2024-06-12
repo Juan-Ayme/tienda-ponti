@@ -23,7 +23,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-                <div class="shoping__cart__table">
+                <div class="shoping__cart__table stylish-card">
                     <table>
                         <thead>
                             <tr>
@@ -40,31 +40,19 @@
                 </div>
                 <div class="shoping__cart__btns">
                     <!-- <a href="#" class="primary-btn cart-btn">CONTINUE SHOPPING</a> -->
-                    <a href="#" class="primary-btn cart-btn cart-btn-right" id="botonVaciar"><span class="icon_loading"></span>
+                    <a href="#" class="primary-btn cart-btn cart-btn-right vaciar-carrito" id="botonVaciar"><span class="icon_loading"></span>
                         Vaciar carrito</a>
                 </div>
             </div>
             <div class="col-lg-4">
-                <!-- <div class="col-lg-6">
-                <div class="shoping__continue">
-                    <div class="shoping__discount">
-                        <h5>Discount Codes</h5>
-                        <form action="#">
-                            <input type="text" placeholder="Enter your coupon code">
-                            <button type="submit" class="site-btn">APPLY COUPON</button>
-                        </form>
-                    </div>
-                </div>
-            </div> -->
-                <div class="shoping__checkout">
+                <div class="shoping__checkout cart-section">
                     <h5>Cart Total</h5>
                     <ul>
-                        <!-- <li>Subtotal <span>$454.98</span></li> -->
-                        <li>Total <span id="total">$454.98</span></li>
+                        <li>Total <span id="total" class="texto-carrito ">$454.98</span></li>
                     </ul>
-                    <a href="<?php echo BASE_URL . 'principal/order'; ?>" class="primary-btn mb-2">CHECKOUT</a>
+                    <a href="<?php echo BASE_URL . 'principal/order'; ?>" class="primary-btn mb-2 boton-checkout"><i class="fa fa-shopping-cart"></i> CHECKOUT</a>
                     <input type="hidden" id="whatsapp-negocio" value="<?php echo $data['negocio']['whatsapp']; ?>">
-                    <a href="#" class="btn btn-success btn-block" id="carrito-whatsapp">WHATSAPP</a>
+                    <a href="https://api.whatsapp.com/send?phone=<?php echo $data['negocio']['whatsapp'] . '&text=Productos= ' . $producto['nombre'] . ' Precio(' . $producto['precio'] . ')'; ?>" class="btn btn-success btn-block boton-whatsapp" id="carrito-whatsapp"><i class="fa fa-whatsapp"></i> WHATSAPP</a>
                 </div>
             </div>
         </div>

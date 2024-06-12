@@ -28,6 +28,11 @@
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style-login.css" type="text/css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style-ind.css" type="text/css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style-productos.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style-contactos.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style-header-ocultar.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style-carrito.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style-address.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style-profile.css" type="text/css">
 </head>
 
 <body>
@@ -45,14 +50,14 @@
         <div class="humberger__menu__cart">
             <ul>
                 <!-- <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li> -->
-                <li><a href="<?php echo BASE_URL . 'principal/carrito'; ?>"><i class="fa fa-shopping-bag"></i> <span id="numerito">0</span></a></li>
+                <li><a href="<?php echo BASE_URL . 'principal/carrito'; ?>"><i class="fa fa-shopping-bag"></i> <span id="numerito" class="carrito-compra">0</span></a></li>
             </ul>
             <!-- <div class="header__cart__price">item: <span>$150.00</span></div> -->
         </div>
         <div class="humberger__menu__widget">
             <div class="header__top__right__auth">
                 <?php if (empty($_SESSION['id_usuario'])) { ?>
-                    <a href="<?php echo BASE_URL . 'principal/login'; ?>"><i class="fa fa-user"></i> Login</a>
+                    <a href="<?php echo BASE_URL . 'principal/login'; ?>"><i class="fa fa-user" ></i> Login</a>
                 <?php } else {  ?>
                     <a href="<?php echo BASE_URL . 'profile'; ?>"><i class="fa fa-user"></i> Tu cuenta</a>
                 <?php } ?>
@@ -69,50 +74,14 @@
         <div class="header__top__right__social">
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-pinterest-p"></i></a>
         </div>
-        <div class="humberger__menu__contact">
-            <ul>
-                <li><i class="fa fa-envelope"></i> TiendaPontificia@elp.edu.pe</li>
-                <li>Tienda online</li>
-            </ul>
-        </div>
+
     </div>
     <!-- Humberger End -->
 
     <!-- Header Section Begin -->
     <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="header__top__left">
-                            <ul>
-                                <li><i class="fa fa-envelope"></i> TiendaPontificia@elp.edu.pe</li>
-                                <li>Tienda online</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="header__top__right">
-                            <div class="header__top__right__social">
-                                <a href="https://www.facebook.com/ILPInstitutoLaPontificia"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                            <div class="header__top__right__auth">
-                                <?php if (empty($_SESSION['id_usuario'])) { ?>
-                                    <a href="<?php echo BASE_URL . 'principal/login'; ?>"><i class="fa fa-user"></i> Login</a>
-                                <?php } else {  ?>
-                                    <a class="cuenta-usuario modern-a" href="<?php echo BASE_URL . 'profile'; ?>"><i class="fa fa-user "></i> Tu cuenta</a>
-                                <?php } ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
@@ -134,13 +103,22 @@
                         <ul>
                             <!-- <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li> -->
                             <li><a href="<?php echo BASE_URL . 'principal/carrito'; ?>"><i class="fa fa-shopping-bag"></i> <span id="numerito1" class="carrito-compra">0</span></a></li>
-                        </ul>
-                        <!-- <div class="header__cart__price">item: <span>$150.00</span></div> -->
+                            <li>
+                            <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__auth">
+                                <?php if (empty($_SESSION['id_usuario'])) { ?>
+                                    <a class="cuenta-usuario carrito-color carrito-header-estilo" href="<?php echo BASE_URL . 'principal/login'; ?>"><i class="fa fa-user carrito-header-estilo"></i> Login</a>
+                                <?php } else {  ?>
+                                    <a class="cuenta-usuario carrito-color carrito-header-estilo" href="<?php echo BASE_URL . 'profile'; ?>"><i class="fa fa-user carrito-header-estilo"></i> Tu cuenta</a>
+                                <?php } ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="humberger__open">
-                <i class="fa fa-bars"></i>
+                <i class="fa fa-ellipsis-v"></i>
             </div>
         </div>
     </header>

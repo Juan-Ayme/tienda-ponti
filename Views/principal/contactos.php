@@ -81,17 +81,17 @@
                 </div>
             </div>
         </div>
-        <form action="#">
+        <form action="#" class="form-estilo">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
-                    <input type="text" placeholder="Tu nombre">
+                    <input type="text" placeholder="Tu nombre" class="form-input">
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <input type="text" placeholder="Tu Correo">
+                    <input type="text" placeholder="Tu Correo" class="form-input">
                 </div>
                 <div class="col-lg-12 text-center">
-                    <textarea placeholder="Tu Mensaje"></textarea>
-                    <button type="submit" class="site-btn">ENVIAR MENSAJE</button>
+                    <textarea placeholder="Tu Mensaje" class="form-textarea"></textarea>
+                    <button type="submit" class="site-btn form-site-btn">ENVIAR MENSAJE</button>
                 </div>
             </div>
         </form>

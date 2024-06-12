@@ -33,7 +33,7 @@
                             <h5>S/<?php echo $producto['precio']; ?></h5>
                         </div>
                     </div>
-                </div>
+                </div> 
             <?php } ?>
         </div>
     </div>

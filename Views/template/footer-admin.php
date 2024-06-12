@@ -5,7 +5,13 @@
 </div> <!-- content -->
 
 <footer class="footer">
-  © <?php echo date('Y'); ?> <span class="d-none d-md-inline-block"><i class="mdi mdi-heart text-danger"></i> </span>
+<div class="footer__copyright__text">
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Pontificia &copy;<script>
+                document.write(new Date().getFullYear());
+              </script> Todos los derechos reservados </a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
 </footer>
 
 </div>

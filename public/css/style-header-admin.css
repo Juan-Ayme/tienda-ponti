@@ -1,0 +1,19 @@
+.navbar-admin {
+    background-color: #f8f9fa!important;
+    color: #2499c7;
+}
+/* Ocultar el botón en pantallas grandes */
+.button-celular {
+    display: none;
+}
+
+.texto-color{
+    color: #003e57;
+}
+
+/* Mostrar el botón en pantallas pequeñas (menos de 768px) */
+@media (max-width: 767px) {
+    .button-celular {
+        display: block;
+    }
+}

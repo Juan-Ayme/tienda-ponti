@@ -1,0 +1,44 @@
+.stylish-container {
+    background-color: #f8f9fa00!important;
+    padding: 20px;
+    border-radius: 5px;
+    border-color: #f8f9fa00!important;
+}
+
+.stylish-card {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+
+.stylish-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2499c7;
+    text-align: center;
+}
+
+
+.input-group-text {
+    background-color: #007bff!important;
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+
+.stylish-title::after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    border-bottom: 2px solid #2499c7;
+    margin-top: 10px;
+}
+
+.espacio-tabla{
+margin-top: 20px;
+}
+
+.paypal-button.paypal-button-color-gold, .paypal-button-row.paypal-button-color-gold .menu-button {
+    background-color: #2499c7!important;
+}

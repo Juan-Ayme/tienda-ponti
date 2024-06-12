@@ -22,6 +22,7 @@
     <link href="<?php echo BASE_URL; ?>public/admin/css/style.css" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>public/css/toastify.min.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>public/css/style-header-admin.css" />
 
 </head>
 
@@ -31,7 +32,7 @@
     <!-- Loader -->
     <div id="preloader">
         <div id="status">
-            <div class="spinner">
+            <div class="spinner">  
                 <div class="rect1"></div>
                 <div class="rect2"></div>
                 <div class="rect3"></div>
@@ -52,7 +53,7 @@
 
             <div class="left-side-logo d-block d-lg-none">
                 <div class="text-center">
-                    <a href="index.html" class="logo"><img src="<?php echo BASE_URL; ?>public/img/logo.png" height="20" alt="logo"></a>
+                    <a href="index.html" class="logo"><img src="<?php echo BASE_URL; ?>public/img/logo-pontificia-sin.png" width="200" alt="logo"></a>
                 </div>
             </div>
 
@@ -119,31 +120,31 @@
 
                     <div class="topbar-left	d-none d-lg-block">
                         <div class="text-center">
-                            <a href="<?php echo BASE_URL; ?>" class="logo"><img src="<?php echo BASE_URL; ?>public/img/logo.png" height="22" alt="logo"></a>
+                            <a href="<?php echo BASE_URL; ?>" class="logo"><img src="<?php echo BASE_URL; ?>public/img/logo-pontificia-sin.png" width="200" alt="logo"></a>
                         </div>
                     </div>
 
-                    <nav class="navbar-custom">
+                    <nav class="navbar-custom navbar-admin">
 
                         <ul class="list-inline float-right mb-0">
 
                             <li class="list-inline-item dropdown notification-list nav-user">
                                 <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                    <img src="<?php echo BASE_URL; ?>public/admin/images/users/avatar-6.jpg" alt="user" class="rounded-circle">
-                                    <span class="d-none d-md-inline-block ml-1"><?php echo $_SESSION['nombre_usuario']; ?><i class="mdi mdi-chevron-down"></i> </span>
+                                    <img src="<?php echo BASE_URL; ?>public/admin/images/users/avatar-perfil.png" alt="user" class="rounded-circle">
+                                    <span class="texto-color d-none d-md-inline-block ml-1"><?php echo $_SESSION['nombre_usuario']; ?><i class="mdi mdi-chevron-down"></i> </span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown">
-                                    <a class="dropdown-item" href="<?php echo BASE_URL . 'usuarios/perfil'; ?>"><i class="fas fa-user"></i> Perfil</a>
+                                    <a class="dropdown-item" href="<?php echo BASE_URL . 'usuarios'; ?>"><i class="fas fa-user"></i> Usuario</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="<?php echo BASE_URL . 'admin/salir'; ?>"><i class="fas fa-power-off"></i> Logout</a>
+                                    <a class="dropdown-item" href="<?php echo BASE_URL . 'admin/salir'; ?>"><i class="fas fa-power-off"></i> Cerrar Sesion</a>
                                 </div>
                             </li>
 
                         </ul>
 
-                        <ul class="list-inline menu-left mb-0">
-                            <li class="list-inline-item">
-                                <button type="button" class="button-menu-mobile open-left waves-effect">
+                        <ul class="list-inline menu-left mb-0 " >
+                            <li class="list-inline-item ">
+                                <button type="button" class="button-menu-mobile open-left waves-effect navbar-admin button-celular">
                                     <i class="mdi mdi-menu"></i>
                                 </button>
                             </li>

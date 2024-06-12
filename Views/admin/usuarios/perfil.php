@@ -16,7 +16,7 @@
 </div>
 
 <div class="alert alert-info">
-    <h1>HOLA</h1>
+    <h1>a</h1>
 </div>
 
 <?php include_once 'Views/template/footer-admin.php'; ?>

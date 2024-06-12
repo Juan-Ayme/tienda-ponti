@@ -1,7 +1,7 @@
 <?php include "Views/template/header.php"; ?>
-<div class="card">
-    <div class="card-body">
-        <a class="btn btn-danger mb-2" href="<?php echo BASE_URL . 'profile/salir'; ?>" role="button">Cerrar Sesion</a>
+<div class="card cajita-opciones">
+    <div class="card-body ">
+        <!-- <a class="btn btn-danger mb-2" href="<?php echo BASE_URL . 'profile/salir'; ?>" role="button">Cerrar Sesion</a>-->
         <div class="table-responsive">
             <table class="table table-bordered table-striped table-hover align-middle" style="width: 100%;" id="tblPendientes">
                 <thead>
@@ -17,6 +17,9 @@
                 </tbody>
             </table>
         </div>
+        <a class="btn btn-danger mb-2" href="<?php echo BASE_URL . 'profile/salir'; ?>" role="button">
+        <i class="fa fa-sign-out"></i>
+        Cerrar Sesion</a>
     </div>
 </div>
 

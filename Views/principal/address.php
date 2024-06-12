@@ -1,15 +1,13 @@
 <?php include "Views/template/header.php"; ?>
 
 <section class="shoping-cart spad">
-    <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title mb-5">Dirección de Envío</h5>
-                <div class="card">
-                    <div class="card-body">
+    <div class="container  ">
+        <div class="card stylish-container">
+                <h5 class="card-title mb-5 stylish-title">Dirección de Envío</h5>
+                    <div class="card-body stylish-card">
                         <form autocomplete="off" id="frmEnvio">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 espacio">
                                     <div class="input-group mb-3">
                                         <span class="input-group-text">Nombres</span>
                                         <input type="text" id="nombre" name="nombre" class="form-control" value="<?php echo (!empty($_SESSION['address']['nombre'])) ? $_SESSION['address']['nombre'] : ''; ?>" placeholder="Nombres *">
@@ -29,8 +27,8 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="input-group mb-3">
-                                        <span class="input-group-text">Ciudad</span>
-                                        <input type="text" id="ciudad" name="ciudad" class="form-control" value="<?php echo (!empty($_SESSION['address']['ciudad'])) ? $_SESSION['address']['ciudad'] : ''; ?>" placeholder="Ciudad *">
+                                        <span class="input-group-text">Departamento</span>
+                                        <input type="text" id="ciudad" name="ciudad" class="form-control" value="<?php echo (!empty($_SESSION['address']['ciudad'])) ? $_SESSION['address']['ciudad'] : ''; ?>" placeholder="Departamento *">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -41,8 +39,8 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="input-group mb-3">
-                                        <span class="input-group-text">Pais</span>
-                                        <input type="text" id="pais" name="pais" class="form-control" value="<?php echo (!empty($_SESSION['address']['pais'])) ? $_SESSION['address']['pais'] : ''; ?>" placeholder="Pais *">
+                                        <span class="input-group-text">Distrito</span>
+                                        <input type="text" id="pais" name="pais" class="form-control" value="<?php echo (!empty($_SESSION['address']['pais'])) ? $_SESSION['address']['pais'] : ''; ?>" placeholder="Distrito *">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -59,8 +57,6 @@
                             </div>
                         </form>
                     </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
