@@ -1,20 +1,27 @@
 <?php
-class Conexion{
+class Conexion {
     private $conect;
-    public function __construct()
-    {
-        $pdo = "mysql:host=".HOST.";dbname=".DB.";".CHARSET;
+
+    public function __construct() {
+        $host = 'roundhouse.proxy.rlwy.net';
+        $port = 16315;
+        $dbname = 'railway';
+        $charset = 'utf8';
+        $user = 'root';
+        $pass = 'tOLDLkSZnpKWRGLHbGlYnyiwxLydpaAo';
+
+        $dsn = "mysql:host=$host;port=$port;dbname=$dbname;charset=$charset";
+
         try {
-            $this->conect = new PDO($pdo, USER, PASS);
+            $this->conect = new PDO($dsn, $user, $pass);
             $this->conect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
-            echo "Error en la conexion".$e->getMessage();
+            echo "Error en la conexion: " . $e->getMessage();
         }
     }
-    public function conect()
-    {
+
+    public function conect() {
         return $this->conect;
     }
 }
- 
 ?>
